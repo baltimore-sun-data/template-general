@@ -2,6 +2,22 @@
   margin-top: 50px;
 }
 
+.exampleList {
+  list-style-type: none;
+}
+.item {
+  font-family: 'Lato', sans-serif;
+}
+.item--red {
+  color: red;
+}
+.item__image {
+  border: 1px solid black;
+}
+.item__image--small {
+  width: 100px;
+}
+
 #leaderboard {
   width: 728px;
   height: 90px;
