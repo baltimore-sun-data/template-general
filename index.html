@@ -78,15 +78,40 @@
 
         <div class="container">
             <h1>Headline</h1>
+            <!-- BEM example. -->
             <ul class="exampleList">
+                <!-- BEM stands for Block - Element - Modifier -->
+                <!-- A "Block" is a distinct HTML component, like this li -->
                 <li class="item">Item 1</li>
+                <!--
+                    Below we see a "Modifier," which is denoted with double dashes. 
+                    A Modifier changes the style of a Block or Element.
+                    Notice how the "item" class is also there. This is because we want this li
+                    to also have all of the CSS styles of a regular "item" class.
+                -->
                 <li class="item item--red">Item 2</li>
                 <li class="item">
+                    <!-- 
+                        Below we see an "Element," denoted by double underscores.
+                        Elements are HTML components that depend on a Block.
+                        For example, the "item__image" below would be an image styled specifically for this list.
+                     -->
                     <img class="item__image" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=image&w=350&h=100"/>
                 </li>
                 <li class="item">
+                    <!--
+                        We can add Modifiers to Elements as well, as seen below.
+                        Again, notice how the "item__image" class is still there since we want those styles to also apply.
+                    -->
                     <img class="item__image item__image--small" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=image&w=350&h=100"/>
                 </li>
+                <!--
+                    You can think of BEM as going from general to more specific. 
+                    With BEM, you can create generic components, like a plain button, and then add modifiers to it
+                    without changing the original button.
+                    The syntax is redundant and bloaty, but I think it's a worthwhile trade-off for the clarity it brings,
+                    and with SASS, the syntax becomes much easier on the CSS end.
+                -->
             </ul>
         </div>
 
